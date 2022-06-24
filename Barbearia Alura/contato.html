@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!--Teste-->
+    </head>
+
+    <body>
+        <header> <!--cabeçario-->
+            <div class="caixa">
+                <h1> <img src="imagens produtos\logo.png" alt="Logo da barbearia alura"> </h1>
+                <nav> <!--tag de navegação-->
+                    <ul>  
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form> <!--tag de formulário-->
+                <label for="nomesobrenome">Nome e sobrenome</label> <!--etiqueta para um input, for faz a etiqueta -->
+                <input type="text" id="nomesobrenome"class="input-area" required> <!--torna obrigatorio o preenchimento-->
+
+                <label for="email">Email</label>
+                <input type="email" id="email"class="input-area" required placeholder="seuemail@dominio.com"> <!--placeholder sugestão do input-->
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone"class="input-area" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem" >Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-area" required></textarea> <!--caixa de mensagem-->
+
+                <fieldset> <!--varios campos referente a mesma coisa, ao inves do div-->
+                    <legend>Como prefere nosso contato?</legend> <!--é o p do fieldset-->
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                     <!--tipo radio, caixa de marcação-->
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                     <!--name bota todos radio dentro de um grupo-->
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <!--checked sempre marca o whatsapp primeiro-->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select> <!--tag de caixa de seleção-->
+                        <option>Manhã</option> 
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label> <!--checkbox, caixa para marcar-->
+
+                <input type="submit" value="Enviar formulário" class="enviar"> <!--caixa para enviar formulário, value muda o nome do input -->
+                
+            </form>
+
+            <table> <!--tabela-->
+                <thead> <!-- tag de cabeçalho de uma coluna-->
+                    <tr> <!--linha-->
+                        <th>Dia</th> <!--th cédula do cabeçalho-->
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody> <!--tg de main de uma tabela-->
+                    <tr>
+                        <td>Segunda</td> <!--cédula-->
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td> 
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td> 
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer> <!--rodapé-->
+            <img src="imagens produtos/logo-branco.png" alt="Logo da barbearia alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+
+        </footer>
+
+    </body>
+</html>
