@@ -1,0 +1,6 @@
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column; /* botando o flex em colunas, um embaixo do outro */
+    flex-wrap: wrap; /* quebra para a proxima coluna, nao ultrapassa de 250px */
+    height: 252px;
+}
