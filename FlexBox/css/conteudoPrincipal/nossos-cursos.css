@@ -8,10 +8,24 @@
     margin: 1%;
 }
 
-.conteudoPrincipal-cursos-link:nth-child(4n) {/* define que a cada 4 elementos a margem será 0 */
-    margin-right: 0;
+@media screen and (min-width: 0) {
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+    .conteudoPrincipal-cursos {
+        margin: 1.5%;
+    }
 }
 
-.conteudoPrincipal-cursos-link:nth-child(4n+1) {
-    margin-left: 0;
+@media screen and (min-width: 768px) {
+    .conteudoPrincipal-cursos-link {
+        width: 23%;
+    }
+    .conteudoPrincipal-cursos-link:nth-child(4n) {/* define que a cada 4 elementos a margem será 0 */
+        margin-right: 0;
+    }
+    
+    .conteudoPrincipal-cursos-link:nth-child(4n+1) {
+        margin-left: 0;
+    }
 }

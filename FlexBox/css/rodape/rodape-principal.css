@@ -1,6 +1,18 @@
 .rodapePrincipal-navMap-list {
     display: flex;
     flex-direction: column; /* botando o flex em colunas, um embaixo do outro */
-    flex-wrap: wrap; /* quebra para a proxima coluna, nao ultrapassa de 250px */
+    flex-wrap: wrap; /* quebra para a proxima coluna, nao ultrapassa de 252px */
     height: 252px;
+}
+
+@media screen and (min-width: 0) {
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rodapePrincipal-navMap-list {
+        height: 252px;
+    }
 }

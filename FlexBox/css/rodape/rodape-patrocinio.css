@@ -11,10 +11,30 @@
     margin: 5%;
 }
 
-.rodapePrincipal-contatoForm {
-    width: 25%;
-}
-
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
+}
+
+@media screen and (min-width: 0) {
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rodapePrincipal-patrocinadores {
+        padding: 3% 0
+    }
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .rodapePrincipal-contatoForm {
+        width: 25%;   
+    }
 }
