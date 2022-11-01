@@ -1,0 +1,21 @@
+.introducao {
+    background-color: red;
+    height: auto;
+}
+
+.introducao-container {
+    background-image: url(../../img/introducao/Alura_Plus.png);
+    background-repeat: no-repeat;
+    height: 680px;
+}
+
+.introducao-boxTexto {
+
+}
+
+.introducao-titulo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
